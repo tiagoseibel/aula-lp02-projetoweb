@@ -1,0 +1,8 @@
+gdt-api/target/*
+gdt-api/.vscode/*
+gdt-api/.settings/*
+gdt-api/.mvn/*
+gdt-api/mvnw
+gdt-api/mvnw.cmd
+gdt-api/.project
+gdt-api/.classpath
