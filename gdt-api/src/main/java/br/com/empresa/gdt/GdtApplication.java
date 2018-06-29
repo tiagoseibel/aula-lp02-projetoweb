@@ -22,7 +22,8 @@ public class GdtApplication {
     	config.addAllowedOrigin("*");
     	config.addAllowedHeader("*");
     	config.addAllowedMethod("GET");
-    	config.addAllowedMethod("POST");
+		config.addAllowedMethod("POST");
+		config.addAllowedMethod("DELETE");
     	source.registerCorsConfiguration("/**", config);
     	return new CorsFilter(source);
 

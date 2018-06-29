@@ -1,11 +1,15 @@
 package br.com.empresa.gdt.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "bloco", catalog = "gerenciador_tarefas")
@@ -14,6 +18,8 @@ public class Bloco implements java.io.Serializable {
     private static final long serialVersionUID = -2790083349568956163L;
     private long id;
     private String descricao;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDate;
 
     public Bloco() {
     }
@@ -46,4 +52,18 @@ public class Bloco implements java.io.Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+	/**
+	 * @return the createdDate
+	 */
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	/**
+	 * @param createdDate the createdDate to set
+	 */
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
 }

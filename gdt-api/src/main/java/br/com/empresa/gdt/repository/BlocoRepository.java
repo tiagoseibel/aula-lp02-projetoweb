@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.empresa.gdt.model.Bloco;
 
 @Repository
-public interface BlocoRepository extends JpaRepository<Bloco, Integer> {
+public interface BlocoRepository extends JpaRepository<Bloco, Long> {
 
 }

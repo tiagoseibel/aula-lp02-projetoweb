@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BlocoComponent } from './bloco/bloco.component';
 import { HomeComponent } from './home/home.component';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+
 import { Roteador } from './app.router';
 
 @NgModule({
@@ -13,7 +16,7 @@ import { Roteador } from './app.router';
     HomeComponent
   ],
   imports: [
-    BrowserModule, Roteador
+    BrowserModule, Roteador, HttpModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

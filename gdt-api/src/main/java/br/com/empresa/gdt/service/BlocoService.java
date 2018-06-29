@@ -20,6 +20,11 @@ public class BlocoService {
         blocoRespository.save(bloco);
     }
 
+    @Transactional
+    public void delete(long id) {
+        blocoRespository.deleteById(id);
+    }
+
     public List<Bloco> findAll() {
         return blocoRespository.findAll();
     }
